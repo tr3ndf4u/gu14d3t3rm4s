@@ -1,5 +1,5 @@
 // Set url service app
-var urlRequest = "http://yoursite.com/admin/";
+var urlRequest = "http://guia-tucuman.trendmobile.com.ar/admin/";
 var urlService  = urlRequest+"index.php/";
 // Set maps variabel
 var map,

@@ -210,10 +210,12 @@ a {
   top: 0;
   display: -webkit-box;
   display: box;
-  background-color: #1eb0e9;
-  background-image: -webkit-linear-gradient(top, #1eb0e9 0, #109adc 100%);
-  background-image: linear-gradient(to bottom, #1eb0e9 0, #109adc 100%);
-  border-bottom: 1px solid #0e5895;
+  /*background-color: #809E08;
+  background-image: -webkit-linear-gradient(top, #809E08 0, #536D05 100%);
+  background-image: linear-gradient(to bottom, #809E08 0, #536D05 100%);*/
+  background-color: #fff;
+  /*border-bottom: 1px solid #536D05;*/
+  border-bottom: 3px solid #666;
   box-shadow: inset 0 1px 1px -1px rgba(255, 255, 255, .8);
   -webkit-box-orient: horizontal;
           box-orient: horizontal;
@@ -226,12 +228,12 @@ a {
   left: 0;
   display: block;
   width: 100%;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: normal;
   line-height: 44px;
-  color: #fff;
+  color: #666666;
   text-align: center;
-  text-shadow: 0 -1px rgba(0, 0, 0, .5);
+  /*text-shadow: 0 -1px rgba(0, 0, 0, .5);*/
   white-space: nowrap;
 }
 
@@ -310,17 +312,19 @@ a {
 .bar-title [class*="button"] {
   position: relative;
   z-index: 10; /* Places buttons over full width title */
-  font-size: 12px;
+  font-size: 18px;
   line-height: 23px;
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
-  background-color: #1eb0e9;
-  background-image: -webkit-linear-gradient(top, #1eb0e9 0, #0984c6 100%);
-  background-image: linear-gradient(to bottom, #1eb0e9 0, #0984c6 100%);
-  border: 1px solid #0e5895;
-  box-shadow: 0 1px rgba(255, 255, 255, .25);
+  color: #809E08;
+  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);*/
+  /*background-color: #809E08;
+  background-image: -webkit-linear-gradient(top, #809E08 0, #536D05 100%);
+  background-image: linear-gradient(to bottom, #809E08 0, #536D05 100%);*/
+  background: #fff;
+  /*border: 1px solid #536D05;*/
+  border:none;
+  /*box-shadow: 0 1px rgba(255, 255, 255, .25);
   -webkit-box-flex: 0;
-          box-flex: 0;
+          box-flex: 0;*/
 }
 
 
@@ -337,7 +341,7 @@ a {
 /* Override standard button active states */
 .bar-title .button:active {
   color: #fff;
-  background-color: #0876b1;
+  background-color: #809E08;
 }
 
 /* Directional buttons in title bars (thanks to @GregorAdams for solution - http://cssnerd.com/2011/11/30/the-best-pure-css3-ios-style-arrow-back-button/)
@@ -537,12 +541,13 @@ a {
 float:left;
 font-size: 28px;
 margin-top: -12px;
-padding-right: 10px
+padding-right: 10px;
+color:#809E08;
 }
 
 .list li:active {
   background-color: #F2F2F2;
-  border-left: 3px solid #0099CC;
+  border-left: 3px solid #809E08;
 }
 
 /* Give top border to first list items */
@@ -615,7 +620,7 @@ padding-right: 10px
   border-top: 1px solid rgba(0, 0, 0, .1);
   /**border-bottom: 1px solid rgba(0, 0, 0, .1);*/
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, .4);
-  border-bottom: 1px solid #0099CC;
+  border-bottom: 1px solid #809E08;
 }
 /**Add */
 .list span {
@@ -1251,7 +1256,8 @@ select {
 /* Required reset of font-size to same as standard body */
 .slider > ul > li > * {
   font-size: 14px;
-}/* Toggle styles (to be used with toggles.js)
+}
+/* Toggle styles (to be used with toggles.js)
 -------------------------------------------------- */
 
 .toggle {
